@@ -1,0 +1,437 @@
+/**************************
+Global Imports
+**************************/
+/**************************
+Base Imports
+**************************/
+/* Styles for mobile screens
+(See responsive.css for media queries) */
+/**************************
+GENERAL
+**************************/
+/* site body*/
+body {
+  background-color: #FAFAFA;
+  color: #696969;
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.4em;
+  margin: 0 auto;
+  padding: 0; }
+  @media (min-width: 768px) {
+    body {
+      font-size: 16px; } }
+  @media (min-width: 1024px) {
+    body {
+      font-size: 22px; } }
+
+/* links */
+a {
+  text-decoration: none;
+  color: #696969; }
+
+/**************************
+Layout Imports
+**************************/
+/**************************
+NAVIGATION
+**************************/
+.name {
+  @extends %centered;
+  margin: 30px 0 45px 0;
+  color: #696969;
+  font-weight: 700;
+  font-size: 34px;
+  font-family: "Lato", Arial, sans-serif; }
+  @media (min-width: 768px) {
+    .name {
+      margin: 60px 0 30px 0;
+      font-size: 24px; } }
+  @media (min-width: 1024px) {
+    .name {
+      padding: 40px 0 40px 80px;
+      font-size: 40px;
+      float: left; } }
+
+.main-nav {
+  margin: 0 20px 0 -20px; }
+  @media (min-width: 768px) {
+    .main-nav {
+      margin: 5px 5px 50px 5px;
+      line-height: 1.4em; } }
+  @media (min-width: 1024px) {
+    .main-nav {
+      line-height: 1.4em;
+      float: right; } }
+  .main-nav li {
+    margin: 8px;
+    padding: 12px 0;
+    display: block;
+    background-color: #fff; }
+    @media (min-width: 768px) {
+      .main-nav li {
+        display: inline-block;
+        background-color: transparent;
+        margin: 0;
+        padding: 0 20px; } }
+    @media (min-width: 1024px) {
+      .main-nav li {
+        display: inline-block;
+        background-color: transparent;
+        margin: 0;
+        padding: 80px 80px 0px 0px; } }
+  .main-nav a {
+    text-transform: uppercase;
+    color: #696969;
+    font-size: 20px;
+    font-weight: bold; }
+
+.main-nav a.selected, nav a:hover {
+  color: #c2c2c2; }
+
+@media (min-width: 768px) {
+  .main-nav a {
+    font-size: 14px; } }
+@media (min-width: 1024px) {
+  .main-nav a {
+    font-size: 18px; } }
+
+/**************************
+HEADING
+**************************/
+header {
+  margin: 0;
+  padding: 5px 0 30px 0;
+  width: 100%;
+  color: #878787; }
+  @media (min-width: 768px) {
+    header {
+      margin: 0 0 30px 0;
+      padding: 5px 0 40px 0; } }
+  @media (min-width: 1024px) {
+    header {
+      margin: 0 0 30px 0;
+      padding: 5px 0 60px 0; } }
+
+@media (min-width: 768px) {
+  .greeting {
+    width: 92%;
+    margin: 0 auto; } }
+@media (min-width: 1024px) {
+  .greeting {
+    width: 90%; } }
+.greeting-image {
+  padding: 50px 0 20px 0;
+  width: 65%; }
+  @media (min-width: 768px) {
+    .greeting-image {
+      float: right;
+      width: 42%;
+      padding: 0; } }
+  @media (min-width: 1024px) {
+    .greeting-image {
+      float: right;
+      width: 41%;
+      clear: both; } }
+.greeting-headline {
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.5em; }
+  @media (min-width: 768px) {
+    .greeting-headline {
+      width: 54%;
+      float: left;
+      font-size: 20px;
+      text-align: left;
+      padding-right: 4%; } }
+  @media (min-width: 1024px) {
+    .greeting-headline {
+      width: 55%;
+      float: left;
+      font-size: 32px;
+      text-align: left;
+      padding-right: 4%; } }
+
+/**************************
+FOOTER
+**************************/
+footer {
+  width: 100%;
+  padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    footer {
+      width: 100%;
+      margin-top: 20px;
+      padding-bottom: 85px;
+      font-size: 20px; } }
+  @media (min-width: 1024px) {
+    footer {
+      margin-top: 20px;
+      padding-bottom: 45px;
+      font-size: 30px; } }
+
+.footer-content {
+  font-size: 24px;
+  line-height: 1.5em;
+  padding-bottom: 30px;
+  width: 90%;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .footer-content {
+      font-size: 20px;
+      line-height: 1.4em;
+      padding-bottom: 30px;
+      margin: 0 auto; } }
+  @media (min-width: 1024px) {
+    .footer-content {
+      font-size: 30px;
+      padding-bottom: 50px; } }
+.footer-content-header {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 70px 0 20px 0; }
+  @media (min-width: 768px) {
+    .footer-content-header {
+      font-size: 14px;
+      padding: 50px 0 25px 0; } }
+  @media (min-width: 1024px) {
+    .footer-content-header {
+      font-size: 20px;
+      padding: 50px 0 25px 0; } }
+@media (min-width: 768px) {
+  .footer-content-container {
+    width: 80%;
+    margin: 0 auto; } }
+@media (min-width: 1024px) {
+  .footer-content-container {
+    width: 55%; } }
+.footer-nav-container {
+  padding-top: 50px;
+  width: 90%;
+  margin: 0 auto;
+  display: inline-block; }
+  @media (min-width: 768px) {
+    .footer-nav-container {
+      padding-top: 45px;
+      width: 90%;
+      margin: 0 auto; } }
+  @media (min-width: 1024px) {
+    .footer-nav-container {
+      padding-top: 45px;
+      width: 90%; } }
+.footer-nav {
+  border-top: solid 1px #878787;
+  padding-top: 35px; }
+  @media (min-width: 768px) {
+    .footer-nav {
+      list-style: none;
+      border-top: solid 1px silver;
+      padding-top: 15px; } }
+  @media (min-width: 1024px) {
+    .footer-nav {
+      list-style: none;
+      border-top: solid 1px silver;
+      padding-top: 35px; } }
+.footer-name {
+  float: left;
+  font-size: 22px;
+  padding-top: 40px; }
+  @media (min-width: 768px) {
+    .footer-name {
+      float: left;
+      font-size: 14px;
+      padding-top: 25px; } }
+  @media (min-width: 1024px) {
+    .footer-name {
+      font-size: 22px;
+      padding-top: 45px; } }
+
+.padding-bold {
+  font-weight: bold;
+  margin-left: 15px; }
+
+.contact-info {
+  line-height: 2.5em; }
+
+.back-to-top {
+  float: right;
+  font-size: 18px;
+  color: #696969;
+  font-weight: bold; }
+  @media (min-width: 768px) {
+    .back-to-top {
+      display: none; } }
+
+.back-to-top:hover {
+  color: #c2c2c2; }
+
+.hide-on-mobile {
+  display: none; }
+  @media (min-width: 768px) {
+    .hide-on-mobile {
+      float: right;
+      display: inline;
+      padding-left: 55px;
+      font-size: 12px;
+      font-weight: bold;
+      text-decoration: none;
+      list-style: none; } }
+  @media (min-width: 1024px) {
+    .hide-on-mobile {
+      font-size: 18px; } }
+
+@media (min-width: 768px) {
+  .no-color {
+    color: #404040; } }
+
+@media (min-width: 768px) {
+  .no-color:hover {
+    color: silver; } }
+
+/**************************
+BODY
+**************************/
+.body-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 90px;
+  background-color: #fff;
+  border-top: 5px solid #ADD8E6; }
+  @media (min-width: 768px) {
+    .body-container {
+      padding-bottom: 60px; } }
+  @media (min-width: 1024px) {
+    .body-container {
+      width: 95%;
+      border-top: 10px solid lightblue; } }
+.body-section-header {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 65px 0 30px 0; }
+  @media (min-width: 768px) {
+    .body-section-header {
+      margin: 40px 0 0 0;
+      font-size: 13px; } }
+  @media (min-width: 1024px) {
+    .body-section-header {
+      margin: 80px 0 0 0;
+      font-size: 20px; } }
+
+.portfolio-image {
+  padding: 55px 0 0 0;
+  width: 90%;
+  border-radius: 10px; }
+  @media (min-width: 768px) {
+    .portfolio-image {
+      width: 90%;
+      padding: 50px 0 5px 0; } }
+  @media (min-width: 1024px) {
+    .portfolio-image {
+      padding: 50px 0 5px 0; } }
+.portfolio-header {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 40px 0 30px 0; }
+  @media (min-width: 768px) {
+    .portfolio-header {
+      font-size: 18px;
+      font-weight: 400; } }
+  @media (min-width: 1024px) {
+    .portfolio-header {
+      font-size: 26px;
+      font-weight: 400; } }
+.portfolio-content {
+  width: 84%;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .portfolio-content {
+      width: 70%;
+      margin: 0 auto;
+      height: 66px; } }
+  @media (min-width: 1024px) {
+    .portfolio-content {
+      width: 77%;
+      margin: 0 auto;
+      height: 150px; } }
+
+.skills {
+  background: #ADD8E6;
+  border-top: 5px solid #696969;
+  border-bottom: 5px solid #878787; }
+  @media (min-width: 768px) {
+    .skills {
+      border-top: 10px solid dimgrey;
+      border-bottom: 10px solid silver; } }
+  .skills-image {
+    padding: 55px 0 10px 0;
+    max-height: 200px; }
+  .skills-header {
+    font-family: "League Gothic", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0 10px 0; }
+  .skills-content {
+    width: 80%;
+    margin: 0 auto; }
+
+@media (min-width: 768px) {
+  .primary {
+    width: 50%;
+    float: left;
+    margin-left: 10px;
+    margin-right: -10px; } }
+@media (min-width: 1024px) {
+  .primary {
+    width: 33%;
+    float: left;
+    margin: 0; } }
+
+@media (min-width: 768px) {
+  .secondary {
+    width: 50%;
+    float: right;
+    margin-right: 10px;
+    margin-left: -10px; } }
+@media (min-width: 1024px) {
+  .secondary {
+    width: 33%;
+    float: left;
+    margin: 0; } }
+
+@media (min-width: 768px) {
+  .halfquarter {
+    width: 50%;
+    float: left; } }
+@media (min-width: 1024px) {
+  .halfquarter {
+    width: 25%;
+    float: left; } }
+
+body {
+  text-align: center; }
+
+.footer-nav, .back-to-top {
+  text-decoration: none;
+  list-style: none; }
+
+header:after, .greeting:after, .body-container:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/**************************
+Component Imports
+**************************/
+/*  Web Fonts --------------------- */
+@font-face {
+  font-family: "League Gothic";
+  src: url("../fonts/leaguegothic-condensed-italic-webfont.eot");
+  src: url("../fonts/leaguegothic-condensed-italic-webfont.eot?#iefix") format "embedded-opentype", url("../fonts/leaguegothic-condensed-italic-webfont.woff") format "woff", url("../fonts/leaguegothic-condensed-italic-webfont.ttf") format "truetype", url("../fonts/leaguegothic-condensed-italic-webfont.svg") format("svg"); }
+
+/*# sourceMappingURL=application.css.map */

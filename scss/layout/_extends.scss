@@ -1,0 +1,22 @@
+// Center text
+
+%centered {
+	text-align: center;
+}
+
+// No list style, or text decoration
+
+%liststyletextdecnone {
+	text-decoration: none;
+	list-style: none;
+}
+
+// Clearfix
+
+%clearfix {
+	&:after {
+	content: "";
+	display: table;
+	clear: both;
+	}
+}

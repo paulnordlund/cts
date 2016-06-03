@@ -1,0 +1,35 @@
+/* Styles for mobile screens
+(See responsive.css for media queries) */
+
+/**************************
+GENERAL
+**************************/
+
+/* site body*/
+body {
+  @extend %centered;
+  background-color: $color-sec;
+  color: $color-text-base;
+  font-family: $stack-lato;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.4em; 
+  margin: 0 auto;
+  padding: 0;
+
+  @media #{$brk-narrow} {
+    font-size: 16px;
+  }
+
+  @media #{$brk-wide} {
+    font-size: 22px;
+  }
+
+}
+
+
+/* links */
+a {
+  text-decoration: none;
+  color: $color-link-default;
+  }

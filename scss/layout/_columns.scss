@@ -1,0 +1,41 @@
+.primary {
+	@media #{$brk-narrow} {
+      width: 50%;
+      float: left;
+      margin-left: 10px;
+      margin-right: -10px;
+    }
+
+    @media #{$brk-wide} {
+      width: 33%;
+      float: left;
+      margin: 0;
+    }
+}
+
+.secondary {
+	@media #{$brk-narrow} {
+      width: 50%;
+      float: right;
+      margin-right: 10px;
+      margin-left: -10px;    
+    }
+
+    @media #{$brk-wide} {
+      width: 33%;
+      float: left;
+      margin: 0;
+    }
+}
+
+.halfquarter {
+  @media #{$brk-narrow} {
+    width: 50%;
+    float: left; 
+  }
+
+  @media #{$brk-wide} {
+    width: 25%;
+    float: left;    
+  }
+}

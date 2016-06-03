@@ -1,0 +1,156 @@
+/**************************
+NAVIGATION
+**************************/
+
+.name {
+  @extends %centered;
+  margin: 30px 0 45px 0;
+  color: $color-text-base;
+  font-weight: 700;
+  font-size: 34px;
+  font-family: $stack-lato;
+
+  @media #{$brk-narrow} {
+    margin: 60px 0 30px 0;
+    font-size: 24px;
+  }
+
+  @media #{$brk-wide} {
+    padding: 40px 0 40px 80px;
+    font-size: 40px;
+    float: left;
+  }
+}
+
+.main-nav {
+  margin: 0 20px 0 -20px;
+  
+  @media #{$brk-narrow} {
+    margin: 5px 5px 50px 5px;
+    line-height: 1.4em;
+  }
+
+  @media #{$brk-wide} {
+    line-height: 1.4em;
+    float: right;
+  }
+
+  li {
+    margin: 8px;
+    padding: 12px 0;
+    display: block;
+    background-color: $color-prim;
+  
+    @media #{$brk-narrow} {
+      display: inline-block;
+      background-color: transparent;
+      margin: 0;
+      padding: 0 20px; 
+    }
+
+    @media #{$brk-wide} {
+      display: inline-block;
+      background-color: transparent;
+      margin: 0;
+      padding: 80px 80px 0px 0px;  
+    }
+  }
+
+  a {
+    text-transform: uppercase;
+    color: $color-text-base;
+    font-size: 20px;
+    font-weight: bold;
+  }
+} 
+
+.main-nav a.selected, nav a:hover {
+  color: $color-link-hover; }
+
+.main-nav a {
+  @media #{$brk-narrow} {
+    font-size: 14px;   
+  }
+
+  @media #{$brk-wide} {
+  font-size: 18px;   
+  }
+}
+
+
+/**************************
+HEADING
+**************************/
+
+header {
+  @extend %clearfix;
+  margin: 0;
+  padding: 5px 0 30px 0;
+  width: 100%;
+  color: $color-text-mid;
+
+  @media #{$brk-narrow} {
+    margin: 0 0 30px 0;
+    padding: 5px 0 40px 0;
+  }
+
+  @media #{$brk-wide} {
+    margin: 0 0 30px 0;
+    padding: 5px 0 60px 0;
+  }
+}
+
+.greeting {
+  @extend %clearfix;
+
+  @media #{$brk-narrow} {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  @media #{$brk-wide} {
+    width: 90%;
+  }
+
+  &-image {
+    padding: 50px 0 20px 0;
+    width: 65%;
+    
+    @media #{$brk-narrow} {
+      float: right;
+      width: 42%;
+      padding: 0;
+    }
+
+    @media #{$brk-wide} {
+      float: right;
+      width: 41%;
+      clear: both;
+    }
+  }
+
+  &-headline {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.5em;
+  
+    @media #{$brk-narrow} {
+      width: 54%;
+      float: left;
+      font-size: 20px;
+      text-align: left;
+      padding-right: 4%;
+    }
+
+    @media #{$brk-wide} {
+      width: 55%;
+      float: left;
+      font-size: 32px;
+      text-align: left;
+      padding-right: 4%;    
+    }
+  }
+}

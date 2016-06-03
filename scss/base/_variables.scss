@@ -1,0 +1,50 @@
+// Descriptive color variables
+
+$white          	: #fff;
+$black          	: #000;
+$grey           	: #878787;
+$grey98				: #FAFAFA;
+$dimgrey			: #696969;
+$lightblue			: #ADD8E6;
+
+
+// Functional color variables
+
+$color-prim			: $white;
+$color-sec			: $grey98;
+$color-ter          : $lightblue;
+
+$color-text-light	: $white;
+$color-text-mid		: $grey;
+$color-text-base	: $dimgrey;
+$color-text-dark	: $black;
+
+$color-link-default : $dimgrey;
+$color-link-hover 	: lighten($dimgrey, 35%);
+
+$color-shadow       : rgba($black,.8);
+$color-body         : $white;
+
+
+// Font stacks
+
+$stack-sans-serif	: Arial, sans-serif;
+$stack-lato			: 'Lato', $stack-sans-serif;
+$stack-leaguegothic	: 'League Gothic', $stack-sans-serif;
+
+
+// Border radius
+
+$br 				: 10px;
+
+
+// Asset paths
+
+$path-img 			: '../img';		
+$path-font			: '../fonts';
+
+
+// Media query breakpoints
+
+$brk-narrow			: '(min-width: 768px)';
+$brk-wide			: '(min-width: 1024px)';
